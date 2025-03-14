@@ -1,0 +1,124 @@
+*,
+::before,
+::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border-width: 0;
+border-style: solid;
+}
+
+
+body{
+    margin: 0rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #3674B5;
+    padding: 1rem;
+}
+
+
+#form{
+    background-color: #578FCA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px 2px ;
+    width: 100%;
+}
+
+
+  
+
+#formTitle{
+    color: black;
+    text-align: center;
+}
+
+#formdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.formInputs{
+    background-color: #A1E3F9 ;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.formInputs::placeholder{
+    color: rgba(5, 0, 0, 0.663);
+}
+
+.information{
+    margin: 0;
+    color: rgba(5, 0, 0, 0.663);
+    display: none;
+
+}
+
+#phoneContainer{
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#phone{
+    width: 100%;
+}
+
+#phonecode{
+    margin: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #A1E3F9 ;
+    color: rgba(5, 0, 0, 0.663);
+    
+}
+
+select{
+   
+    height: 40px;
+   border-radius: 10px;
+   background-color: #A1E3F9 ;
+   color: rgba(5, 0, 0, 0.663);
+    outline: none;
+    border: none;
+   
+}
+
+.correct{
+    outline: 2px solid #22c55e;
+}
+.incorrect{
+    outline: 2px solid #ef4444; 
+}
+
+.show-info{
+    display: block;
+}
+
+#form-btn{
+    width: 100%;
+    background-color: #66bedb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+@media ( min-width: 640px ) {
+
+    #form{
+        width: 60%;
+    }
+}
+
+
+
+
