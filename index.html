@@ -4,24 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Validacion</title>
+  <link href="windows_15242.ico" type="image/x-icon">
+  <title>Validation Form</title>
 </head>
 <body>
 
   <form id="form">
-    <h1 id="formTitle">Validacion</h1>
+    <h1 id="formTitle">Validation Form</h1>
     <div id="formdiv">
-      <input type="text" id="username" class="formInputs" placeholder="Nombre de Usuario">
+      
+      <input type="text" id="username" class="formInputs" placeholder="Username">
       <p class="information">
-        Debe incuir 1 numero y 1 letra. Maximo 10 caracteres 
+        It must include 1 number and 1 letter. Min 6, max 16 characters.
+     
       </p>
     </div>
 
     <div id="formdiv">
-      <input type="email" id="email" class="formInputs" placeholder="Correo Electronico">
+      <input type="email" id="email" class="formInputs" placeholder="E-mail">
 
       <p class="information">
-        Debe ser del siguiente formato: micorreo@gmail.com
+        It has to follow this format: myawesomemail@email.com
       </p>
 
     </div>
@@ -30,7 +33,7 @@
 
     <div id="formdiv">
       <select id="countries" >
-        <option value="" Selected disabled>Selecciona un Pais</option>
+        <option value="" Selected disabled>Select your Country</option>
         <option data-countryCode="GB" value="44" >UK (+44)</option>
         <option data-countryCode="US" value="1">USA (+1)</option>
       <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -256,34 +259,36 @@
 
     <div id="formdiv">
       <div id="phoneContainer">
-
         <span id="phonecode">+##</span>
-        <input type="tel" id="phone" class="formInputs" placeholder="Numero Telefonico">
-        <p class="information">
-          Solo acepta numeros, no letras.
+        <input type="tel" id="phone" class="formInputs" placeholder="Phone Number">
       </div>
+      <p class="information">
+        Only numbers are valid. Min 6, max 16 characters
+      </p>
+    </div>
+    
      
-      </p>
+      
     </div>
 
     <div id="formdiv">
-      <input type="password" id="password" class="formInputs" placeholder="Contrasena">
+      <input type="password" id="password" class="formInputs" placeholder="Password">
       <p class="information">
-        Debe incuir un numero y una letra. Maximo 24 caracteres
+        It must include a number and a letter. Min 6, max 24 characters
       </p>
     </div>
 
 
     <div id="formdiv">
-      <input type="password" id="confirm-password" class="formInputs" placeholder="Confirmar Contrasena">
+      <input type="password" id="confirm-password" class="formInputs" placeholder="Confirm Password">
 
       <p class="information">
-        Debe incuir un numero y una letra. Maximo 24 caracteres
+        It must be the same as the password.
       </p>
     </div>
 
     <div class="btn-container" style="display: flex; justify-content: center;">
-    <button disabled id="form-btn">Registrar</button>
+    <button disabled id="form-btn">Submit</button>
 
     </div>
 
